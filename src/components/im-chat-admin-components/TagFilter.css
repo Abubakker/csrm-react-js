@@ -1,0 +1,25 @@
+.ant-popover-inner {
+  padding: 8px;
+  border-radius: 10px !important;
+}
+
+.ant-popover-inner .ant-menu-submenu-title {
+  padding: 4px !important;
+  margin: 0 !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+.ant-popover-inner
+  ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light.css-dev-only-do-not-override-3phfck {
+  border: none;
+}
+
+.ant-popover-inner .ant-menu-item {
+  padding: 8px !important;
+}
+
+.ant-popover-arrow {
+  display: none !important;
+}

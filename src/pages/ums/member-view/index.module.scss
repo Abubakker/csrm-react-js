@@ -1,0 +1,40 @@
+.title {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 16px;
+}
+
+.addressList {
+  .title {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+    .left {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+      width: 50%;
+    }
+
+    .right {
+      text-align: right;
+      width: 50%;
+    }
+  }
+}
+
+
+.AddressAdd {
+  .addressSelect {
+    // display: flex;
+    align-items: center;
+  }
+}

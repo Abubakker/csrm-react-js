@@ -1,0 +1,152 @@
+.Popconfirm {
+    width: 200px;
+}
+
+.ValuationModal {
+    .warp {
+        height: 75vh;
+        overflow: auto;
+        padding: 0px 24px;
+
+        .btn {
+            text-align: center;
+        }
+    }
+
+    .form_label {
+        width: 68px;
+        text-align: right;
+
+        .form_required {
+            display: inline-block;
+        }
+
+        .form_required::before {
+            display: inline-block;
+            margin-inline-end: 4px;
+            color: #ff4d4f;
+            font-size: 14px;
+            font-family: SimSun, sans-serif;
+            line-height: 1;
+            content: "*";
+        }
+    }
+
+}
+
+.ShiplableModal {
+    .form {
+        margin: 60px 0px;
+
+        .tips {
+            color: Red;
+            font-size: 12px;
+        }
+
+        .uploader {
+            display: block;
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.GoodsReceived {
+    .form {}
+
+}
+
+.ConfirmSettlementModal {
+    .tips {
+        color: Red;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+
+.FinalValuationModal {
+    .form_label {
+        width: 68px;
+        text-align: right;
+
+        .form_required {
+            display: inline-block;
+        }
+
+        .form_required::before {
+            display: inline-block;
+            margin-inline-end: 4px;
+            color: #ff4d4f;
+            font-size: 14px;
+            font-family: SimSun, sans-serif;
+            line-height: 1;
+            content: "*";
+        }
+    }
+
+    .gray {
+        color: rgba(153, 153, 153, 1);
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+
+.PaymentVoucherModal {
+    .desc {
+
+        .btn {
+            margin-top: 12px;
+            text-align: center;
+        }
+    }
+
+    .formWarp {
+
+        margin-top: 12px;
+
+        .form {
+            height: 260px;
+            width: 100%;
+        }
+    }
+
+
+    :global {
+        .ant-input[disabled] {
+            color: #000;
+        }
+
+        .ant-input-group-addon {
+            color: #000;
+        }
+    }
+
+}
+
+.UpdateFinalValuationModal {
+
+    .desc {
+
+        .btn {
+            margin-top: 12px;
+            text-align: center;
+        }
+    }
+
+    .form {
+        margin-top: 12px;
+    }
+}
+
+.DeliverGoodsModal {
+    .switch {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}

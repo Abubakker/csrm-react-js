@@ -1,0 +1,39 @@
+.Popconfirm {
+    width: 200px;
+}
+
+
+.TimeFrameEditModal {
+    .form {
+        .input {
+            // margin-right: 24px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+            height: 32px;
+
+            span {
+                cursor: pointer;
+            }
+        }
+
+        .addWarp {
+
+            .addItems {
+
+
+
+                :global {
+                    .ant-form-item {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}

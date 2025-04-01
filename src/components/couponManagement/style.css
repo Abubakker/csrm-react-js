@@ -1,0 +1,6 @@
+
+.custom-datepicker .ant-picker-input input::placeholder{
+    color: #C5C8D9 !important;
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+}

@@ -1,0 +1,53 @@
+@import '../../styles//var-global.scss';
+
+.Sider {
+  min-width: 240px !important;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+  height: 60px;
+  margin: 4px;
+}
+
+.header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+
+  &Right {
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content {
+  padding: 8px;
+  margin: 12px 8px;
+  min-height: 280px;
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .content {
+    padding: 16px;
+    margin: 24px 16px;
+  }
+}

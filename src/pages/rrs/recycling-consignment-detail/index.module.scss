@@ -1,0 +1,36 @@
+.RecyclingConsignmentDetail {
+    .option {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .info {
+        margin-top: 20px;
+
+        .tips {
+            font-size: 12px;
+            color: red;
+            margin-left: 24px;
+        }
+    }
+
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+
+        .itemWarp {
+            border: 0px solid #eee;
+            display: flex;
+            width: 350px;
+            align-items: center;
+            padding: 4px 12px;
+
+            .name {
+                min-width: 72px;
+                word-wrap: break-word;
+            }
+
+            .value {}
+        }
+    }
+}

@@ -1,0 +1,18 @@
+/* 打印时的样式 */
+@media print {
+  .printElement {
+    visibility: visible; /* 只显示需要打印的元素 */
+    transform: rotate(-90deg); /* 旋转 -90 度 */
+    transform-origin: center; /* 确保以中心点旋转 */
+  }
+
+  .hideElement {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .noBorder {
+    border: none;
+  }
+}

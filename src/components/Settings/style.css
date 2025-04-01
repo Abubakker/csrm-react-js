@@ -1,0 +1,122 @@
+.customCalendar .rmdp-header-values {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.customCalendar .rmdp-top-class,
+.rmdp-day-picker {
+  display: block !important;
+}
+
+.customCalendar .rmdp-border {
+  border: none !important;
+}
+
+.calendarBody {
+  width: 100%;
+}
+/* calendar bg */
+.calendarBody .rmdp-calendar {
+  background: #f5f6fc;
+}
+
+/* header */
+.calendarBody .rmdp-header-values {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #3f4252;
+}
+.calendarBody .rmdp-header {
+  margin-bottom: 25px !important;
+}
+
+/* arrow */
+.calendarBody .rmdp-arrow {
+  border: solid #020202;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  height: 5px;
+  margin-top: 5px;
+  padding: 4px;
+  width: 5px;
+}
+
+/* date modification */
+.calendarBody .rmdp-today span {
+  background-color: #f5f6fc !important;
+  color: #3f4252 !important;
+}
+.calendarBody .rmdp-day.rmdp-range.rmdp-today span {
+  background-color: #3f414e !important;
+  color: white !important;
+}
+.calendarBody .rmdp-today span:hover {
+  color: white !important;
+}
+
+.calendarBody .rmdp-day {
+  width: 65px !important;
+  display: flex;
+  justify-content: center;
+}
+
+/* .calendarBody .rmdp-day span {
+  font-size: 15px;
+} */
+
+.rmdp-day.rmdp-range.start:hover {
+  color: white !important;
+}
+
+.calendarBody .rmdp-day .sd:hover {
+  background-color: #3f414e !important;
+  color: white;
+  width: 60%;
+  margin-left: 9px;
+}
+.calendarBody .rmdp-range {
+  background-color: #3f414e !important;
+  box-shadow: none !important;
+}
+.calendarBody .rmdp-week-day {
+  color: #c0c0c2 !important;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 10px !important;
+}
+.calendarBody .rmdp-week {
+  margin-bottom: 2px !important;
+}
+
+/* border rounded */
+.rmdp-range-hover.start:not(.force),
+.rmdp-range.start:not(.force) {
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+
+.rmdp-range-hover.end:not(.force),
+.rmdp-range.end:not(.force) {
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background-color: #3f4252 !important;
+}
+
+
+.BsSelect span.ant-select-arrow {
+  display: none !important;
+}
+
+.BsSelect .ant-select-selection-placeholder {
+  padding-left: 18px !important;
+  font-size: 12px;
+}
+.BsSelect .ant-select-selection-item {
+  padding-left: 18px !important;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+:where(.css-dev-only-do-not-override-3phfck).ant-select-dropdown {
+  border-radius: 10px !important;
+}

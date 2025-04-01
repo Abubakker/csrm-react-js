@@ -1,0 +1,14 @@
+.flexBox {
+  display: flex;
+  margin-bottom: 8px;
+
+  .btn {
+    cursor: pointer;
+    padding: 4px 15px;
+  }
+
+  .selected {
+    background-color: #1677ff;
+    color: white;
+  }
+}

@@ -1,0 +1,44 @@
+.responseModal .ant-modal .ant-modal-content {
+  background-color: #ffffff !important;
+  padding: 20px 24px;
+}
+
+.custom-table {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.custom-table .ant-table-wrapper .ant-table {
+  border-radius: 10px;
+  border: 1px solid #ebedf7;
+}
+
+.custom-table .ant-table-tbody td {
+  padding: 22px 8px !important;
+}
+
+.offline-custom-textArea .adm-text-area-count {
+  display: flex !important;
+  align-content: flex-end !important;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+  /* height: 235px !important; */
+  color: #c5c8d9 !important;
+  font-size: 10px;
+}
+
+.offline-custom-textArea .adm-text-area-element::placeholder {
+  color: #c5c8d9 !important;
+  font-size: 12px !important;
+  letter-spacing: 1px !important;
+}
+/* text area */
+.offline-custom-textArea .adm-text-area-element {
+  font-size: 12px;
+  letter-spacing: 0.5px !important;
+  font-weight: 500;
+}
+
+:where(.css-dev-only-do-not-override-3phfck).ant-select-dropdown {
+  border-radius: 10px !important;
+}

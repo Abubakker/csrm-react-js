@@ -1,0 +1,36 @@
+.labelWarp {
+    .labelWarp_form {
+        margin-bottom: 16px;
+
+        .labelWarp_form_right {
+            margin-top: 5px;
+        }
+
+        .labelWarp_from_btnTool {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        :global {
+
+            // :where(.css-dev-only-do-not-override-mxhywb).ant-radio-button-wrapper {
+            //     padding-inline: 8px;
+            // }
+        }
+    }
+
+
+    .mt {
+        margin-top: 5px;
+    }
+
+    .mb {
+        margin-bottom: 5px;
+    }
+
+    :global {
+        .ant-btn.ant-btn-sm {
+            padding: 0px 3px;
+        }
+    }
+}

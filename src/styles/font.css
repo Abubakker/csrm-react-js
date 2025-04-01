@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Hiragino Mincho ProN;
+  src: url('https://static-cloudflare.ginzaxiaoma.com/HiraginoMinchoProN.ttc');
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url('/public/fonts/GeorgiaBold.ttf');
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url('/public/fonts/NotoSans.ttf');
+}

@@ -1,0 +1,31 @@
+.form_label {
+    width: 68px;
+    text-align: right;
+    white-space: pre-wrap;
+    line-height: 12px;
+
+    .form_required {
+        display: inline-block;
+    }
+
+    .form_required::before {
+        display: inline-block;
+        margin-inline-end: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: "*";
+    }
+
+
+
+}
+
+:global {
+    .renderLabel .ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        content: "" !important;
+        margin-inline-end: 0px !important;
+    }
+
+}

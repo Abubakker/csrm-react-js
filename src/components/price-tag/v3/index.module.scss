@@ -1,0 +1,8 @@
+/* 打印时的样式 */
+@media print {
+  .editBtn {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}

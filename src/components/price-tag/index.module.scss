@@ -1,0 +1,252 @@
+// 采用全局样式，class编译时不会被混淆，是纯净的。易于样式匹配
+/**
+ https://zhuanlan.zhihu.com/p/504550803
+
+    pt全称为point,绝对长度单位。是一个专用的印刷单位“磅”
+    1pt=0.35146mm
+    1mm=2.83pt
+
+    一张纸大小：210mm*297mm
+    2.83 * 210 = 594.3pt
+    2.83 * 297 = 840.51pt
+
+    规定一个价签大小：31mm*73mm
+    2.83 * 31 = 87.73pt
+    2.83 * 73 = 206.59pt
+
+    规定纸张上右下左边距：39mm 12mm 39mm 12mm
+    2.83 * 39 = 110.37pt
+    2.83 * 12 = 33.96pt
+
+    (594.3 - 87.83 * 6) / 2 = 33.66
+    (594.3 - 88.20 * 6) / 2 = 34.55
+
+    594.3 - 34.57 * 2 = 525.16
+    525.16 / 6 = 87.5266
+    
+
+    87.8266 * 6 = 526.9596
+    594.3 - 526.9596 = 67.3404
+    67.3404 / 2 = 33.6702
+
+
+    // 新写法
+
+    一张纸大小：210mm*297mm
+    2.83 * 210 = 594.3pt
+    2.83 * 297 = 840.51pt
+
+    打印区域大小：531.84pt * 625.44pt (设计给到)
+
+    单个价签
+    高：625.44 / 3 = 208.48pt
+    宽：531.84 / 6 = 88.64pt
+
+
+*/
+:global {
+
+    .font-Hiragino {
+        font-family: Hiragino Mincho ProN;
+    }
+
+    .font-Georgia {
+        font-family: Georgia;
+    }
+
+    .container {
+        width: 88.64pt;
+        height: 208.48pt;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .PriceTag {
+        width: 88.64pt;
+        height: 208.48pt;
+        background-color: #fff;
+        padding: 24px 4px 12px 4px;
+        display: inline-block;
+        position: relative;
+        border: 1px solid #eee;
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .Hermes {
+        font-family: Georgia;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #000;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        zoom: 0.5;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .title {
+        max-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .title .title_text {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        color: #000;
+        overflow: hidden;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-align: center;
+        zoom: 0.5;
+        box-sizing: border-box;
+    }
+
+
+    .PriceTag .subtitle {
+        font-family: Hiragino Mincho ProN;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 16px 0px;
+        zoom: 0.5;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info {
+        margin: 0px 4%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info .infoWarp {
+        display: inline-flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info .infoWarp .items {
+        margin-bottom: 8px;
+        width: 100%;
+        zoom: 0.5;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 200;
+        letter-spacing: 0em;
+        display: inline-flex;
+        flex-direction: row;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info .infoWarp .items .label {
+        color: #91641a;
+        font-family: Hiragino Mincho ProN;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info .infoWarp .items .label .span {
+        color: #000;
+        font-family: Hiragino Mincho ProN;
+        text-align: justify;
+        text-align-last: justify;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .info .infoWarp .items .context {}
+
+
+    .PriceTag .info .infoWarp .items .context .text {
+        color: #000;
+        font-family: Hiragino Mincho ProN;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .price {
+        margin: 3px 0px 12px 0px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .price .priceWarp {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .price .priceWarp .value {
+        font-family: Hiragino Mincho ProN;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        zoom: 0.5;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .price .priceWarp .tax {
+        font-family: Hiragino Mincho ProN;
+        font-size: 10px;
+        zoom: 0.6;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+        line-height: 5px;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .barCode {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1px;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .barCode svg {
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .PriceTag .price_date {
+       text-align: center;
+       font-size: 8px;
+    }
+
+    .PriceTag .footer {
+        font-family: Hiragino Mincho ProN;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 200;
+        letter-spacing: 0em;
+        text-align: left;
+        display: inline-flex;
+        width: 100%;
+        padding: 0px 8px;
+        box-sizing: border-box;
+        zoom: 0.5;
+    }
+
+    .PriceTag .footer .left {
+        width: 10%;
+        text-align: left;
+    }
+
+    .PriceTag .footer .right {
+        width: 90%;
+        text-align: right;
+    }
+}

@@ -1,0 +1,51 @@
+@import './var-global.scss';
+
+.xm-side {
+  position: fixed !important;
+  z-index: 100 !important;
+  height: 100vh !important;
+}
+
+.xm-side-collapsed {
+  max-width: 0 !important;
+  min-width: 0 !important;
+  width: 0 !important;
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .xm-side {
+    position: relative !important;
+    height: 100vh !important;
+  }
+
+  .xm-side-collapsed {
+    max-width: 80px !important;
+    min-width: 80px !important;
+    width: 80px !important;
+  }
+}
+
+.ant-table {
+  overflow: auto;
+}
+
+.ant-message-notice-content {
+  position: fixed;
+  top: 45vh;
+}
+
+.ant-table-tbody td {
+  padding: 10px !important;
+}
+
+.ant-form-inline .ant-form-item {
+  margin-bottom: 12px !important;
+}
+
+.ant-table-measure-row > td {
+  padding: 0px !important;
+}
+
+.ant-input-number-lg {
+  font-size: 16px;
+}

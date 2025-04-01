@@ -1,0 +1,41 @@
+.barSearch {
+
+
+    .warp {
+        display: flex;
+        width: 100%;
+        margin-top: 24px;
+        padding: 12px 0px;
+
+        .subTitle {
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 24px;
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                display: flex;
+                margin-right: 24px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(102, 102, 102, 1);
+
+            }
+        }
+    }
+
+    .form {
+        .pageTotal {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(102, 102, 102, 1);
+            text-align: right;
+        }
+    }
+
+}

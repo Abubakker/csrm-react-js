@@ -1,0 +1,237 @@
+$borderColor: rgba(217, 217, 217, 1);
+
+.TableRowSpan {
+    zoom: 0.8;
+
+    .table {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid $borderColor;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        .table-thead {
+            width: 100%;
+            display: table;
+            display: table-header-group;
+
+            .table-row {
+                display: table-row;
+                box-sizing: border-box;
+                width: 100%;
+
+                .table-cell-th {
+                    border-bottom: 1px solid $borderColor;
+                    border-right: 1px solid $borderColor;
+                    box-sizing: border-box;
+                    display: table-cell;
+                    position: relative;
+                    height: 70px;
+
+                    .th {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0px;
+                        height: 100%;
+                        width: 100%;
+
+
+                        .toDay {
+                            background: rgb(22, 119, 255);
+                            padding: 12px;
+
+                            .week {
+                                color: #fff;
+
+                            }
+
+                            .date {
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+
+                        }
+
+                        .week {
+                            color: rgba(102, 102, 102, 1);
+
+                        }
+
+                        .date {
+                            color: rgba(0, 0, 0, 1);
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .table-tbody {
+            width: 100%;
+            display: table-row-group;
+
+            .table-row {
+                display: table-row;
+                box-sizing: border-box;
+                width: 100%;
+
+                .table-cell-td {
+                    border-bottom: 1px solid $borderColor;
+                    border-right: 1px solid $borderColor;
+                    box-sizing: border-box;
+                    position: relative;
+                    display: table-cell;
+
+                    .td {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0px;
+                        height: 100%;
+                        width: 100%;
+
+                        .firstTD {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgba(102, 102, 102, 1);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .firstTD-rowspan {
+                                z-index: 1;
+                                width: 100%;
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                background-color: #fff;
+                                color: rgba(102, 102, 102, 1);
+                                // border-bottom: 1px solid $borderColor;
+                                // border-top: 1px solid $borderColor;
+                                outline: 1px solid $borderColor;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                        }
+
+                        .rowspan {
+                            z-index: 1;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: #fff;
+                            color: rgba(102, 102, 102, 1);
+                        }
+
+                        .rowspan-current {
+                            z-index: 2;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: #E8F4FF;
+                            color: rgba(22, 119, 255, 1);
+                            border: 3px solid rgba(22, 119, 255, 1);
+                            font-weight: 900;
+
+                        }
+
+                        .rowspan-expired {
+                            z-index: 2;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: #FFE6E6;
+                            color: rgba(235, 0, 0, 1);
+                            border: 3px solid rgba(235, 0, 0, 1);
+                            font-weight: 900;
+                        }
+
+
+                        .tdContent {
+                            outline: 1px solid $borderColor;
+                            height: 100%;
+                            display: flex;
+
+                            .left {
+                                width: 60%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+
+                                .info {
+                                    margin: 0px 0px 0px 24px;
+
+                                    .name {}
+
+                                    .num {}
+
+                                    .phone {}
+                                }
+                            }
+
+                            .right {
+                                width: 40%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                            }
+
+
+                        }
+
+                        .minute {
+                            position: absolute;
+                            top: 3px;
+                            right: 6px;
+                            z-index: 1;
+                            color: rgba(153, 153, 153, 1);
+
+                        }
+
+                        .rest {
+                            position: absolute;
+                            top: 3px;
+                            right: 6px;
+                            color: rgba(153, 153, 153, 1);
+                        }
+
+                        .update {
+                            position: absolute;
+                            bottom: 0px;
+                            right: 3px;
+                            zoom: 2;
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+    :global {
+        .ant-tag {
+            // border: 1px solid red
+            cursor: pointer;
+        }
+    }
+
+}

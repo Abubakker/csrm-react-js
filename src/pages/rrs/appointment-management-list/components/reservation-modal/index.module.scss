@@ -1,0 +1,148 @@
+.ReservationModal {
+    .warpTitle {
+        display: flex;
+        align-items: center;
+
+        .title {
+            margin-right: 24px;
+        }
+
+        .select {
+            width: 120px;
+        }
+
+        .select-red {
+            :global {
+                .ant-select-selection-item {
+                    color: red;
+                    font-weight: 900;
+                }
+
+                .ant-select-arrow {
+                    color: red;
+                }
+            }
+        }
+
+        .select-blue {
+            :global {
+                .ant-select-selection-item {
+                    color: rgba(22, 119, 255, 1);
+                    font-weight: 900;
+                }
+
+                .ant-select-arrow {
+                    color: rgba(22, 119, 255, 1)
+                }
+            }
+        }
+    }
+
+    .info {
+        background-color: rgba(232, 244, 255, 1); //rgb(197, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        margin-bottom: 12px;
+
+        .left {
+            display: flex;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 24px;
+        }
+
+        .items {
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 24px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .formItemText {
+        white-space: pre;
+    }
+}
+
+
+.InputReservationUser {
+    // background: rgba(250, 250, 250, 1);
+    background-color: rgba(238, 238, 238, 0.6);
+    padding: 24px;
+
+    .formItems {
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        margin-bottom: 24px;
+
+        .label {
+            width: 98px;
+            text-align: right;
+        }
+
+        .input {
+            width: 100%;
+        }
+    }
+}
+
+.InputTimeFrame {
+    display: flex;
+    align-items: center;
+
+    .date {}
+
+    .time {
+        display: flex;
+    }
+
+    .middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tips{
+        color: rgb(102, 102, 102);
+        font-size: 12px;
+    }
+}
+
+.InputSelectTable {
+
+    .productWarp {
+        display: flex;
+        min-width: 200px;
+        max-width: 400px;
+
+        .imageWarp {
+            width: 20%;
+        }
+
+        .textWarp {
+            width: 80%;
+            overflow: hidden;
+
+            .productItems {
+                padding: 4px 12px;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+        }
+
+
+
+    }
+}

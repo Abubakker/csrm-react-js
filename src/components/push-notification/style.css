@@ -1,0 +1,73 @@
+.ant-modal .ant-modal-content {
+  border-radius: 10px !important;
+}
+
+select {
+  background-color: white;
+}
+
+option {
+  background-color: white;
+}
+.filterOption :hover {
+  background-color: white;
+}
+
+select option:checked {
+  color: rgb(2, 141, 221);
+}
+select option {
+  outline: none;
+}
+
+.custom-textArea .adm-text-area-count {
+  display: flex !important;
+  align-content: flex-end !important;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+  /* height: 60px !important; */
+  color: #C5C8D9 !important;
+  font-size: 10px;
+}
+
+
+
+.custom-textArea textarea.adm-text-area-element::placeholder {
+  color: #C5C8D9 !important;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+}
+
+.custom-switch .ant-switch.ant-switch-checked {
+  background: #1d4ed8 !important;
+}
+
+
+:where(.css-dev-only-do-not-override-3phfck).ant-switch {
+
+  min-width: 34px !important;
+  height: 20px !important;
+  
+}
+
+ :where(.css-dev-only-do-not-override-3phfck).ant-switch .ant-switch-handle {
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 16px !important;
+  height: 16px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+:where(.css-dev-only-do-not-override-3phfck).ant-switch.ant-switch-checked .ant-switch-handle {
+  inset-inline-start: calc(100% - 20px);
+}
+
+:where(.css-dev-only-do-not-override-3phfck).ant-switch.ant-switch-checked .ant-switch-handle {
+  inset-inline-start: calc(100% - 18px) !important;
+}
+
+:where(.css-dev-only-do-not-override-3phfck).ant-switch.ant-switch-checked {
+  background: #1677FF;
+}

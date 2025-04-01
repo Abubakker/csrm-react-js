@@ -1,0 +1,47 @@
+.shopInfo {
+    padding: 12px 36px;
+    background: #eee;
+
+    .img {
+        width: 100%;
+        margin-right: 12px;
+        display: flex;
+        overflow: auto;
+        padding: 4px 0px;
+
+        .imgWarp {
+            width: 64px;
+            height: 64px;
+            margin-right: 24px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .subtitle {
+            .label {
+                color: #000;
+            }
+
+            .value {
+                color: #999;
+            }
+        }
+    }
+
+    .edit {
+        position: absolute;
+        right: 2px;
+        top: 5px;
+    }
+}

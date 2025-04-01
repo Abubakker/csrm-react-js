@@ -1,0 +1,47 @@
+/* quill text editor */
+.customTextEditor .ql-editor {
+    height: 250px;
+    max-height: 250px;
+    overflow: auto;
+    background: white;
+  }
+  
+  .customTextEditor .ql-editor::before {
+    color: #c5c8d9 !important;
+    font-style: normal !important;
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+  }
+  
+  .customTextEditor .ql-toolbar {
+    order: 2 !important;
+  }
+  
+  .customTextEditor .ql-toolbar.ql-snow {
+    border: none !important;
+    border-radius: 0px 0px 10px 10px;
+    background: white;
+  }
+  
+  .customTextEditor {
+    /* overflow: hidden; */
+  }
+  
+  .customTextEditor .ql-container {
+    order: 1 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #EFE7EB !important;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .customTextEditor .quill {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #EFE7EB;
+    border-radius: 10px !important;
+  }
+  

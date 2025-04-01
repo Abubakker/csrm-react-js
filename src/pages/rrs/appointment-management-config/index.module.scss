@@ -1,0 +1,25 @@
+.AppointmentManagementConfig {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+
+        .subTitle {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    .table {
+        .timeWarp {
+            display: flex;
+
+            .time {
+                margin-right: 24px;
+
+            }
+        }
+
+    }
+}

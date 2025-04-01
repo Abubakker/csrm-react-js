@@ -1,0 +1,50 @@
+.TableList {
+
+
+    .option {
+        text-align: center;
+    }
+
+    .priceWarp {
+        min-width: 200px;
+        height: 64px;
+        .priceItems {
+            padding: 4px 12px;
+            // border: 1px solid #eee;
+            display: flex;
+
+            div {
+                margin-right: 12px;
+
+            }
+        }
+    }
+
+    .productWarp {
+        display: flex;
+        min-width: 200px;
+        max-width: 400px;
+
+        .imageWarp {
+            width: 20%;
+        }
+
+        .textWarp {
+            width: 80%;
+            overflow: hidden;
+
+            .productItems {
+                padding: 4px 12px;
+                // border: 1px solid #eee;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                // white-space: pre;
+            }
+        }
+
+
+
+    }
+
+}

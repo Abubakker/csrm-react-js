@@ -1,0 +1,144 @@
+.RecyclingConsignmentList {
+    .form {
+
+        .unfold {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hidden {
+            margin-top: 12px;
+            display: flex;
+        }
+
+
+    }
+
+    .tabs {
+        margin: 12px 0px;
+
+        :global {
+            .ant-segmented .ant-segmented-item-selected {
+                background-color: #1677ff;
+                color: white
+            }
+        }
+    }
+
+    .table {
+        .img {
+            height: 62px;
+            width: 62px;
+            object-fit: contain;
+            text-align: center;
+        }
+
+        .textCenter {
+            text-align: center;
+        }
+
+        .context {
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow-wrap: break-word;
+            word-break: break-all;
+            white-space: normal;
+            overflow: hidden;
+        }
+
+        .product {
+            // width: 150px;
+            // -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            overflow-wrap: break-word;
+            word-break: break-all;
+            white-space: normal;
+            overflow: hidden;
+        }
+    }
+
+    .textRight {
+        text-align: right;
+    }
+}
+
+
+.ValuationModal {
+    .shopInfo {
+        padding: 12px 36px;
+        display: flex;
+        background: #eee;
+        margin-bottom: 24px;
+        position: relative;
+
+        .img {
+            width: 64px;
+            height: 64px;
+            margin-right: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .title {
+                width: 260px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .subtitle {
+                width: 260px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        .edit {
+            position: absolute;
+            right: 2px;
+            top: 5px;
+        }
+    }
+
+    .MinMaxValuation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.ShiplableModal {
+    .form {
+        margin: 60px 0px;
+
+        .tips {
+            color: Red;
+            font-size: 12px;
+        }
+
+        .uploader {
+            display: block;
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+}
